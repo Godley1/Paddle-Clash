@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Play Neon Clash</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Neon Clash</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<h1>Play Neon Clash</h1>
+  <header>
+    <h1>Play Neon Clash</h1>
+    <p>Bounce the ball back. Every 5 rally hits adds another ball.</p>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="game.html">Play Game</a>
-  <a href="devlog.html">Dev Log</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="game.html">Play Game</a>
+    <a href="devlog.html">Dev Log</a>
+  </nav>
 
-<canvas id="gameCanvas" width="900" height="500"></canvas>
+  <main>
+    <section class="hud">
+      <div class="pill">You: <span id="playerScore">0</span></div>
+      <div class="pill">CPU: <span id="cpuScore">0</span></div>
+      <div class="pill">Rally Hits: <span id="rallyCount">0</span></div>
+      <div class="pill">Balls: <span id="ballCount">1</span></div>
+      <div class="pill">First to 5 wins</div>
+    </section>
 
-<script src="js/game.js"></script>
+    <section>
+      <canvas id="gameCanvas" width="900" height="500"></canvas>
+    </section>
+
+    <section>
+      <p><strong>Controls:</strong> W / S or Arrow Up / Arrow Down</p>
+      <p><strong>Restart:</strong> Press R</p>
+    </section>
+  </main>
+
+  <script src="js/game.js"></script>
 </body>
 </html>

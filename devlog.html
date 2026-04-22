@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dev Log</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Clash Dev Log</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<h1>Development Log</h1>
+  <header>
+    <h1>Development Log</h1>
+    <p>How Neon Clash was modernized from the original 2015 tutorial.</p>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="game.html">Play Game</a>
-  <a href="devlog.html">Dev Log</a>
-</nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="game.html">Play Game</a>
+    <a href="devlog.html">Dev Log</a>
+  </nav>
 
-<main>
-<h2>Updates Made</h2>
-<p>Modernized the original game using JavaScript ES6+, responsive layout, and improved mechanics.</p>
+  <main>
+    <section>
+      <h2>Original Game</h2>
+      <p>
+        The original 2015 tutorial showed how to build a browser-based arcade
+        game using HTML, CSS, JavaScript, jQuery, and older web development
+        patterns. It focused on creating a simple playable experience that
+        worked across different devices.
+      </p>
+    </section>
 
-<h2>Challenges</h2>
-<p>Handled browser rendering issues and rebuilt outdated logic.</p>
+    <section>
+      <h2>Updates I Made</h2>
+      <p>
+        I updated the project using modern HTML5, CSS3, and JavaScript ES6+.
+        I removed the older jQuery-style approach and used cleaner logic and
+        better code structure. I also redesigned the game interface with a
+        responsive layout and a neon arcade theme to make it look more modern.
+      </p>
+      <p>
+        I changed the gameplay so the ball now bounces directly off the paddles
+        instead of using a catch-and-release system. I also added a progressive
+        difficulty feature where a new ball is added after every 5 successful
+        paddle returns.
+      </p>
+    </section>
 
-<h2>Solutions</h2>
-<p>Simplified gameplay and improved code structure.</p>
-</main>
+    <section>
+      <h2>Challenges I Encountered</h2>
+      <p>
+        One challenge was updating older game logic into a cleaner modern
+        format without breaking the game. Another issue was debugging ball
+        rendering and movement so that the game would run consistently in
+        modern browsers. Adding multiple balls also made score resets and
+        rally tracking more complicated.
+      </p>
+    </section>
+
+    <section>
+      <h2>How I Solved Them</h2>
+      <p>
+        I simplified the gameplay structure, added validation checks for ball
+        values, and separated the game logic from the page structure. I also
+        reset the rally counter after each score so the multi-ball system would
+        stay balanced and easy to understand.
+      </p>
+    </section>
+  </main>
 
 </body>
 </html>

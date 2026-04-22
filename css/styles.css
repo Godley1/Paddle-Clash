@@ -1,13 +1,13 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0b1020;
+  background: radial-gradient(circle at top, #15295b 0%, #050816 50%, #02030a 100%);
   color: white;
   text-align: center;
 }
 
 header {
-  padding: 30px;
+  padding: 30px 20px 10px;
 }
 
 nav {
@@ -23,14 +23,45 @@ nav a {
 }
 
 main {
-  padding: 30px;
+  padding: 30px 20px;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 footer {
   padding: 20px;
   background: #11182d;
+}
+
+canvas {
+  width: min(92vw, 900px);
+  height: auto;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 0 30px rgba(54,243,255,0.15), 0 0 60px rgba(255,79,216,0.08);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.hud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 10px auto;
 }

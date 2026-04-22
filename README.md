@@ -28,4 +28,4 @@ This version updates the original browser game using modern HTML5, CSS3, JavaScr
 ## Live Site
 https://godley1.github.io/Neon-Clash/
 ## Repository
-https://github.com/yourusername/neon-clash
+https://github.com/godley1/neon-clash
